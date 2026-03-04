@@ -199,7 +199,7 @@ img {
 }
 
 /* this rule does the same thing as .footer-nav a above but with higher specificity */
-.site-footer .footer-nav ul li a {
+.site-footer .footer-nav a {
   color: #9e9890;
   text-decoration: none;
 }
