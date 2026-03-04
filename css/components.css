@@ -3,24 +3,17 @@
 /* --- buttons --- */
 
 .btn {
-  display: inline-block; /* makes the link behave like a button */
-  padding: 0.75rem 1.75rem; /* top/bottom and left/right padding */
-  font-size: 0.875rem; /* slightly smaller than body text */
-  font-weight: 700; /* bold text */
-
-
-
-
-  letter-spacing: 0.06em; /* spreads the letters out a bit */
-  text-transform: uppercase; /* makes all the text caps */
-
-  text-decoration: none; /* removes underline */
-
-  border: 2px solid transparent; /* border colour is set per variant */
-  border-radius: 4px; /* slightly rounded corners */
-
-  cursor: pointer; /* shows a hand cursor on hover */
-  transition: background-color 200ms ease; /* animates background colour */
+  display: inline-block; 
+  padding: 0.75rem 1.75rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none; 
+  border: 2px solid transparent; 
+  border-radius: 4px; 
+  cursor: pointer;
+  transition: background-color 200ms ease; 
 }
 
 /* TODO: .btn only transitions background-color. Add color and border-color to
@@ -29,123 +22,97 @@
    visible focus indicator on buttons. */
 
 .btn-primary {
-  background-color: #7a1f3d; /* dark red background */
-  color: #ffffff; /* white text */
-  border-color: #7a1f3d; /* border matches the background */
+  background-color: #7a1f3d; 
+  color: #ffffff; 
+  border-color: #7a1f3d;
 }
 
-.btn-primary: hover {
-  background-color: #5a1530; /* darker red on hover */
-  border-color: #5a1530; /* keep border in sync */
-  color: #ffffff; /* keep text white */
+.btn-primary:hover {
+  background-color: #5a1530;
+  border-color: #5a1530;
+  color: #ffffff;
 }
 
 .btn-secondary {
-  background-color: transparent; /* no fill */
-  color: #7a1f3d; /* red text */
-  border-color: #7a1f3d; /* red border */
+  background-color: transparent;
+  color: #7a1f3d;
+  border-color: #7a1f3d;
 }
 
 .btn-secondary:hover {
-  background-color: #7a1f3d; /* fill in the red on hover */
-  color: #ffffff; /* flip to white text */
+  background-color: #7a1f3d;
+  color: #ffffff; 
 }
 
 /* --- cards --- */
 
 .card {
-  background-color: #ffffff; /* white card background */
-  border: 1px solid #e8e4dc; /* light grey border */
-  border-radius: 8px; /* rounded corners */
-  padding: 1.5rem; /* inner spacing */
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); /* subtle drop shadow */
+  background-color: #ffffff; 
+  border: 1px solid #e8e4dc;
+  border-radius: 8px; 
+  padding: 1.5rem; 
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); 
 }
-
-
-
-
-
-
-
-
-
 
 /* TODO: Add a hover state to .card. A small translateY(-2px) and a slightly
    larger box-shadow gives a nice "lift" effect. You will also need to add a
    transition to .card itself so the effect animates instead of snapping. */
 
 .card-icon {
-  font-size: 2.5rem; /* big emoji icon */
-  margin-bottom: 0.75rem; /* space below the icon */
-  line-height: 1; /* prevent extra height from line-height */
+  font-size: 2.5rem; 
+  margin-bottom: 0.75rem; 
+  line-height: 1; 
 }
 
 .card h3 {
-  font-size: 1.125rem; /* slightly larger than body */
-  margin-bottom: 0.5rem; /* space below heading */
-  color: #c9bfb5; /* red heading */
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem; 
+  color: #c9bfb5;
 }
 
 .card p {
-  color: #4a4540; /* dark grey body text */
-  margin-bottom: 0; /* remove default paragraph margin */
+  color: #4a4540;
+  margin-bottom: 0;
 }
 
 /* --- contact form --- */
 
 .contact-form {
-  display: flex; /* stack fields vertically */
-  flex-direction: column; /* one field per row */
-  gap: 1.25rem; /* space between each field group */
+  display: flex; 
+  flex-direction: column; 
+  gap: 1.25rem; 
 }
 
-
-
-
-  .form-group{
-  display: flex; /* stack label above input */
-  flex-direction: column; /* label on top, input below */
-  gap: 0.375rem; /* small gap between label and input */
-  }
+.form-group{
+  display: flex; 
+  flex-direction: column; 
+  gap: 0.375rem; 
+}
 
 .contact-form label {
-  font-size: 0.875rem; /* small label text */
-  font-weight: 700; /* bold label */
-  color: #4a4540; /* dark grey */
+  font-size: 0.875rem; 
+  font-weight: 700; 
+  color: #4a4540; 
 }
 
 /* shared styles for all form inputs, selects, and textareas */
 .contact-form input,
 .contact-form select,
 .contact-form textarea {
-  width: 100%; /* fill the available width */
-  padding: 0.625rem 0.875rem; /* comfortable click target */
-  font-family: "Lato", Arial, sans-serif; /* match the site font */
-  font-size: 1rem; /* normal reading size */
-  color: #1e1a17; /* near-black text */
-  background-color: #ffffff; /* white background */
-  border: 1px solid #e8e4dc; /* light border */
-  border-radius: 4px; /* slightly rounded */
-  outline: none; /* removes the default focus ring */
+  width: 100%; 
+  padding: 0.625rem 0.875rem;
+  font-family: "Lato", Arial, sans-serif; 
+  font-size: 1rem; 
+  color: #1e1a17; 
+  background-color: #ffffff; 
+  border: 1px solid #e8e4dc; 
+  border-radius: 4px; 
+  outline: none; 
 }
 
 /* styles text inputs */
-.contact-form input[type="text"] {
-  width: 100%;
-  padding: 0.625rem 0.875rem;
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 1rem;
-  color: #1e1a17;
-  background-color: #ffffff;
-  border: 1px solid #e8e4dc;
-  border-radius: 4px;
-  outline: none;
-}
-
-/* styles email inputs */
-.contact-form input[type="email"]
-
-{
+.contact-form input[type="text"],
+.contact-form input[type="email"] {
   width: 100%;
   padding: 0.625rem 0.875rem;
   font-family: "Lato", Arial, sans-serif;
@@ -214,15 +181,6 @@
   height: 140px;
   overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
 
 .faq-item h3 {
   color: #7a1f3d; /* red question heading */
