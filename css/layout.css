@@ -150,9 +150,11 @@ img {
   margin-top: 2rem;
 }
 
-/* TODO: The card grid has no responsive styles. On a narrow screen all three
-   columns get squeezed together. Add a media query so the grid switches to
-   one column on small screens. Try a max-width breakpoint around 700px. */
+@media (max-width: 700px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
 /* --- faq --- */
 
