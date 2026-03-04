@@ -3,7 +3,7 @@
 ## Team Members
 
 - [Alfred Fantone](https://github.com/akkanova)
----
+- [Anh Bao Nguyen](https://github.com/baodeptrai712-glitch)
 
 ## Lab Instructions
 
