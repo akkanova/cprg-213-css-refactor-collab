@@ -107,15 +107,13 @@ img {
 
 .hero {
   background-color: #fdf6e3;
-  /* FIXME: height clips content when the browser font size is increased or on
-     small screens. Replace height with min-height and add padding so the
-     section can grow to fit its content. */
-  height: 480px;
+  min-height: 480px;
   display: flex;
   align-items: center;
-   justify-content: center;
+  justify-content: center;
   text-align: center;
   border-bottom: 4px solid #c9a84c;
+  padding: 1px;
 }
 
 .hero-content h1 {
