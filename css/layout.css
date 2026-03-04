@@ -37,20 +37,6 @@ img {
    that forms and text-heavy sections don't stretch too wide. Right now it
    is identical and does nothing. Give it a smaller max-width (around 680px). */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .wrapper {
   max-width: 800px;
   margin: 0 auto;
@@ -123,7 +109,7 @@ img {
 
 /* --- hero --- */
 
-.hero{
+.hero {
   background-color: #fdf6e3;
   /* FIXME: height clips content when the browser font size is increased or on
      small screens. Replace height with min-height and add padding so the
@@ -192,7 +178,7 @@ img {
   font-size: 0.875rem;
 }
 
-    .site-footer .container {
+.site-footer .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
