@@ -53,8 +53,9 @@ a :hover {
   color: #a07830;
 }
 
-/* TODO: Add a :focus style for keyboard accessibility. It should use a
-   visible outline. Do not use outline: none. */
+a :focus{
+  outline: 2px rgb(225, 25, 25);
+}
 
 /* --- blockquote --- */
 
@@ -88,6 +89,9 @@ ul, ol {
 
 li {
   margin-bottom: 0.25rem;
+}
+.facts_list {
+  color: #c9a84c;
 }
 
 /* FIXME: .facts-list items use the default browser marker colour.
