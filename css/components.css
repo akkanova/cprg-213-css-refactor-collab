@@ -16,10 +16,10 @@
   transition: background-color 200ms ease; 
 }
 
-/* TODO: .btn only transitions background-color. Add color and border-color to
-   the transition so changes animate smoothly. Also add a :focus-visible style
-   so keyboard users can see which button is focused — there is currently no
-   visible focus indicator on buttons. */
+.btn:focus-visible{
+  color: aqua;
+  border-color: aquamarine;
+}
 
 .btn-primary {
   background-color: #7a1f3d; 
@@ -54,9 +54,10 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08); 
 }
 
-/* TODO: Add a hover state to .card. A small translateY(-2px) and a slightly
-   larger box-shadow gives a nice "lift" effect. You will also need to add a
-   transition to .card itself so the effect animates instead of snapping. */
+.card:hover{
+  box-shadow: -2px;
+}
+
 
 .card-icon {
   font-size: 2.5rem; 
@@ -124,12 +125,6 @@
   outline: none;
 }
 
-/* FIXME: the two rules above are identical and already covered by the shared
-   rule above them. Combine them into a single selector — or remove them
-   entirely and rely on the shared rule. Also, outline: none removes the
-   browser's focus ring with nothing to replace it — this breaks keyboard
-   accessibility. Add a :focus style with a visible border or outline instead. */
-
 .contact-form select {
   padding-right: 2.5rem;
   appearance: none;
@@ -175,11 +170,6 @@
   border: 1px solid #e8e4dc;
   border-radius: 8px;
   padding: 1.5rem;
-  /* FIXME: this fixed height cuts off content if the text is long or the
-     browser font size is larger than expected. Remove height and overflow
-     so the element sizes itself naturally. */
-  height: 140px;
-  overflow: hidden;
 }
 
 .faq-item h3 {
